@@ -16,7 +16,7 @@ public class Collector : MonoBehaviour
         if (other.gameObject.CompareTag("Player")) //if ending collides with the player
         {
             UnityEngine.Debug.Log("Collected");
-            Object.Destroy(Collectible);
+            Destroy(gameObject); // Destroys the collectible item
         }
     }
     // Update is called once per frame

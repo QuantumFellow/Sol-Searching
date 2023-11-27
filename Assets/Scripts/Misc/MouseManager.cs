@@ -1,51 +1,53 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class MouseManager : MonoBehaviour
 {
-    // Adjust this value to set the sensitivity of the scroll input
+
     public float scrollSensitivity = 1.0f;
 
-    // Number of frames to consider for calculating speed
+    //frames for speed (works on scroll input per 5 frames)
     public int framesToAverage = 5;
 
     private float[] scrollSpeedSamples;
     private int currentFrame = 0;
+    public static float ScrollSpeed;
 
     private void Start()
     {
+        //array for frames
         scrollSpeedSamples = new float[framesToAverage];
     }
 
     private void Update()
     {
-        // Get the scroll input value
+        //scrll val
         float scrollInput = Input.GetAxis("Mouse ScrollWheel");
 
-        // Calculate scroll speed
+        //scrolls per second
         float scrollSpeed = scrollInput / Time.deltaTime;
 
-        // Store the scroll speed in the array
+        //array holds that value
         scrollSpeedSamples[currentFrame % framesToAverage] = scrollSpeed;
         currentFrame++;
 
-        // Calculate the average scroll speed
+        //uses the scroll speed array divides by frame rate to get accurate average of scrolls
         float averageScrollSpeed = CalculateAverageScrollSpeed();
 
         if (scrollInput > 0f)
         {
             Debug.Log("Scrolling UP");
-            // Output the scroll speed
             Debug.Log("Scroll Speed: " + averageScrollSpeed);
         }
         else if (scrollInput < 0f)
         {
             Debug.Log("Scrolling DOWN");
-            // Output the scroll speed
             Debug.Log("Scroll Speed: " + averageScrollSpeed);
         }
+        //sends to ScrollSpeed variable which can be accessed from other scripts e.g scalable platform 
+        ScrollSpeed = averageScrollSpeed;
 
 
-        // Use the averageScrollSpeed for your specific application (e.g., adjust camera zoom speed)
     }
 
     private float CalculateAverageScrollSpeed()

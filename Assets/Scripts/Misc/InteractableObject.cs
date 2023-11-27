@@ -2,31 +2,32 @@ using UnityEngine;
 
 public class InteractableObject : MonoBehaviour
 {
-    public float interactionDistance = 3f; // Set the interaction distance in the Inspector
-    public GameObject player; // Reference to the player GameObject
+    public float interactionDistance = 3f;
+    public GameObject player;
+    //basic interact script for use later
 
     private void Start()
     {
         if (player == null)
         {
-            // If player reference is not set in the Inspector, try to find it in the scene
+            //finds player
             player = GameObject.FindGameObjectWithTag("Player");
         }
     }
 
     private void Update()
     {
-        // Check if the player is close enough for interaction
+        //if player in range
         if (Vector3.Distance(transform.position, player.transform.position) <= interactionDistance)
         {
-            // Player is close enough, perform interaction logic (e.g., show UI prompt, play sound, etc.)
+            // Player is close enough do stuff here
             Debug.Log("Player is close enough to interact with the object!");
 
-            // You can add your interaction code here
+            // code for interaction goes here
         }
         else
         {
-            // Player is not close enough, do any additional logic if needed
+            // Player not in range
         }
     }
 }
