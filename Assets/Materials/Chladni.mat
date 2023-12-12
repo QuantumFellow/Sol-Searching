@@ -43,6 +43,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _GatherTexture2D_195c25464d224476a7c7ddde19ef5731_Texture_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -61,8 +65,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _A: -0.44954222
-    - _B: -0.46276602
+    - _A: -0.44066945
+    - _B: -0.42278287
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
     - _BumpScale: 1
@@ -72,10 +76,10 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _M: 5
+    - _M: 9.799999
     - _Metallic: 0
     - _Mode: 0
-    - _N: 8
+    - _N: 9.399995
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SandStep: 0.9
