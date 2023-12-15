@@ -65,8 +65,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _A: -0.44066945
-    - _B: -0.42278287
+    - _A: -0.43666956
+    - _B: -5.147685
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
     - _BumpScale: 1
@@ -76,10 +76,10 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _M: 9.799999
+    - _M: -14.599987
     - _Metallic: 0
     - _Mode: 0
-    - _N: 9.399995
+    - _N: 7.3999968
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SandStep: 0.9
