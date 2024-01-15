@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8513970607584024697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Coin Collected
+  m_EditorClassIdentifier: 
+  Path: event:/Coin Collected
+  Guid:
+    Data1: -685150383
+    Data2: 1132597456
+    Data3: 338332835
+    Data4: 185786909
+  Banks:
+  - {fileID: -273507575236494882}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-7339913307963618091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,10 +42,10 @@ MonoBehaviour:
   Path: Sol-Sound_Music/Build/Desktop/Master.strings.bank
   Name: Build/Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638409211337828968
+  lastModified: 638409217918848289
   FileSizes:
   - Name: 
-    Value: 712
+    Value: 810
   Exists: 1
 --- !u!114 &-3210728372877019884
 MonoBehaviour:
@@ -35,7 +62,25 @@ MonoBehaviour:
   Path: Sol-Sound_Music/Build/Desktop/Master.bank
   Name: Build/Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 638409211337818919
+  lastModified: 638409217918838292
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-273507575236494882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Build/Desktop/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: Sol-Sound_Music/Build/Desktop/SFX.bank
+  Name: Build/Desktop/SFX
+  StudioPath: bank:/SFX
+  lastModified: 638409217926569845
   FileSizes: []
   Exists: 1
 --- !u!114 &11400000
@@ -53,11 +98,13 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: -7339913307963618091}
   - {fileID: -3210728372877019884}
-  EditorEvents: []
+  - {fileID: -273507575236494882}
+  EditorEvents:
+  - {fileID: -8513970607584024697}
   EditorParameters: []
   MasterBanks:
   - {fileID: -3210728372877019884}
   StringsBanks:
   - {fileID: -7339913307963618091}
-  cacheTime: 638409211337828968
+  cacheTime: 638409217926569845
   cacheVersion: 131616
