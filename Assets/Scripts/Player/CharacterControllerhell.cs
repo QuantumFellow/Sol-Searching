@@ -28,7 +28,6 @@ public class CharacterControllerhell : MonoBehaviour
 
         if (isGrounded)
         {
-
         }
 
         float moveInput = Input.GetAxis("Horizontal");
@@ -57,8 +56,16 @@ public class CharacterControllerhell : MonoBehaviour
 
     private void Jump()
     {
+        animator.SetBool("IsJumping", true);
         Reggie.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
         Debug.Log("isjumping");
     }
+
+    public void resetJumpAnim() 
+    {
+        animator.SetBool("IsJumping", false);
+
+    }
+
 }
 

@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class EnemyDamage : MonoBehaviour
 {
-    public Animator animator;
+
     public int damageAmount = 1; //dmg enemy deals
 
     public void Start()
     {
-        animator = GetComponent<Animator>();
+
     }
     private void OnTriggerEnter2D(Collider2D other)
     {

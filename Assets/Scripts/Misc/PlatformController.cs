@@ -62,5 +62,17 @@ public class PlatformController : MonoBehaviour
         // Trigger the next animation here
         animator.SetBool("LowerSpike", true);
     }
+
+    void changetag()
+    {
+        if (gameObject.tag == "Ground")
+        {
+            gameObject.tag = "Spike";
+        }
+        else
+        {
+            gameObject.tag = "Ground";
+        }
+    }
 }
 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{72ebac43-02fd-45ac-a650-b27fc662b576}">
+		<property name="name">
+			<value>Bowing</value>
+		</property>
+		<relationship name="folder">
+			<destination>{b9321f4f-be97-4adc-bb47-aed6d62ccfe5}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{e5c3bf2c-598f-4eba-b87b-437bdb0f562a}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{e5c3bf2c-598f-4eba-b87b-437bdb0f562a}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
