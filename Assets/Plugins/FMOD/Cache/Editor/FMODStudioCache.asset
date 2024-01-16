@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: Sol-Sound_Music/Build/Desktop/Master.strings.bank
   Name: Build/Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638409265593630056
+  lastModified: 638409377995610264
   FileSizes:
   - Name: 
     Value: 858
@@ -62,7 +62,7 @@ MonoBehaviour:
   Path: Sol-Sound_Music/Build/Desktop/Master.bank
   Name: Build/Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 638409265593545748
+  lastModified: 638409217918838292
   FileSizes: []
   Exists: 1
 --- !u!114 &-273507575236494882
@@ -80,7 +80,7 @@ MonoBehaviour:
   Path: Sol-Sound_Music/Build/Desktop/SFX.bank
   Name: Build/Desktop/SFX
   StudioPath: bank:/SFX
-  lastModified: 638409265604973956
+  lastModified: 638409217926569845
   FileSizes: []
   Exists: 1
 --- !u!114 &11400000
@@ -106,5 +106,5 @@ MonoBehaviour:
   - {fileID: -3210728372877019884}
   StringsBanks:
   - {fileID: -7339913307963618091}
-  cacheTime: 638409265604973956
+  cacheTime: 638409377995610264
   cacheVersion: 131616
