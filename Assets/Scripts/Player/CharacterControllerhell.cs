@@ -49,6 +49,8 @@ public class CharacterControllerhell : MonoBehaviour
 
         // Check if the scroll button is being used
         float scrollInput = Input.GetAxis("Mouse ScrollWheel");
+
+        print(scrollInput);
         if (scrollInput != 0f)
         {
             Debug.Log("Scrolling");
