@@ -14,23 +14,27 @@ public class SettingMenu : MonoBehaviour
     FMOD.Studio.Bus Master; //Grabs bus from fmod
     float MasterVol = 1f;
 
-    void Awake() {
-        Master = FMODUnity.RuntimeManager.GetBus ("bus:/Master");
+    void Awake()
+    {
+        Master = FMODUnity.RuntimeManager.GetBus("bus:/");
     }
 
-    void Start() {
+    void Start()
+    {
         resolutions = Screen.resolutions;
-        resolutionDropdown.ClearOptions(); //clears dropbox
+        //resolutionDropdown.ClearOptions(); //clears dropbox
 
         List<string> options = new List<string>(); //creates list for new values
         int currentResolutionIndex = 0;
 
-        for(int i = 0; i < resolutions.Length; i++) {
+        for (int i = 0; i < resolutions.Length; i++)
+        {
             string option = resolutions[i].width + "x" + resolutions[i].height; //stores the spring to be outputted
             options.Add(option);
-                    if(resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height) {
-                        currentResolutionIndex = i;
-                    }
+            if (resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height)
+            {
+                currentResolutionIndex = i;
+            }
         }
 
         resolutionDropdown.AddOptions(options); //adds those strings to the list
@@ -38,26 +42,32 @@ public class SettingMenu : MonoBehaviour
         resolutionDropdown.RefreshShownValue();
     }
 
-    void Update() {
-        Master.setVolume (MasterVol);
+    void Update()
+    {
+        Master.setVolume(MasterVol);
     }
 
 
-    public void SetMasterVolume (float vol) {
+    public void SetMasterVolume(float vol)
+    {
         MasterVol = vol; //controls Master Vol
     }
-    
-    public void SetQuality (int qualindex) {
+
+    public void SetQuality(int qualindex)
+    {
         QualitySettings.SetQualityLevel(qualindex);
     }
 
-    public void SetFullScreen (bool IsFullscreen) {
+    public void SetFullScreen(bool IsFullscreen)
+    {
         Screen.fullScreen = IsFullscreen;
     }
 
-    public void SetResolution (int resolutionIndex) {
+    public void SetResolution(int resolutionIndex)
+    {
         Resolution resolution = resolutions[resolutionIndex]; //sets the resolution
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
     }
 
 }
+

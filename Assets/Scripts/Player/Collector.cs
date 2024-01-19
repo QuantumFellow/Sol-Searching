@@ -13,7 +13,7 @@ public class Collector : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player")) //if ending collides with the player
+        if (other.gameObject.CompareTag("InkCollector")) //if ending collides with the player
         {
             UnityEngine.Debug.Log("Collected");
             Destroy(gameObject); // Destroys the collectible item

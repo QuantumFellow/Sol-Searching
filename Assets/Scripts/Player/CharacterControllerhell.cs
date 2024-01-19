@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using FMOD.Studio;
 
 public class CharacterControllerhell : MonoBehaviour
 {
@@ -10,7 +11,12 @@ public class CharacterControllerhell : MonoBehaviour
     public Transform GroundCheck;
     public Animator animator;
     private SpriteRenderer spriteRenderer;
-    private float previousYPosition;
+
+
+    //audio
+    private EventInstance playerfootsteps;
+
+    private bool isScrolling; // Added variable to track if scrolling is happening
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +24,7 @@ public class CharacterControllerhell : MonoBehaviour
         Reggie = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        previousYPosition = transform.position.y;
+        playerfootsteps = AudioManager.instance.CreateEventInstance(FMODEvents.instance.PlayerFootsteps);
     }
 
     // Update is called once per frame
@@ -26,33 +32,52 @@ public class CharacterControllerhell : MonoBehaviour
     {
         isGrounded = Physics2D.OverlapCircle(GroundCheck.position, 0.5f, Groundis);
 
-        if (isGrounded)
-        {
-        }
-
         float moveInput = Input.GetAxis("Horizontal");
         Reggie.velocity = new Vector2(moveInput * Speed, Reggie.velocity.y);
         animator.SetFloat("Speed", Mathf.Abs(moveInput));
 
         if (moveInput < 0)
         {
-            spriteRenderer.flipX = false;
-        } 
-        else if (moveInput > 0)
-        {
             spriteRenderer.flipX = true;
         }
+        else if (moveInput > 0)
+        {
+            spriteRenderer.flipX = false;
+        }
 
-        float currentYPosition = transform.position.y;
-        float verticalMovement = currentYPosition - previousYPosition;
+
+
+        // Check if the scroll button is being used
+        float scrollInput = Input.GetAxis("Mouse ScrollWheel");
+        if (scrollInput != 0f)
+        {
+            Debug.Log("Scrolling");
+            if (!isScrolling) // Start scrolling animation only if not already scrolling
+            {
+                StartScrollAnimation();
+            }
+        }
 
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             Jump();
         }
+
+        UpdateSound();
     }
 
+    private void StartScrollAnimation()
+    {
+        animator.SetBool("IsPlaying", true);
+        isScrolling = true;
+    }
+
+    private void StopScrollAnimation()
+    {
+        animator.SetBool("IsPlaying", false);
+        isScrolling = false;
+    }
 
     private void Jump()
     {
@@ -61,11 +86,27 @@ public class CharacterControllerhell : MonoBehaviour
         Debug.Log("isjumping");
     }
 
-    public void resetJumpAnim() 
+    public void resetJumpAnim()
     {
         animator.SetBool("IsJumping", false);
-
     }
 
+    private void UpdateSound()
+    {
+        if (Reggie.velocity.x != 0 && isGrounded)
+        {
+            PLAYBACK_STATE playbackstate;
+            playerfootsteps.getPlaybackState(out playbackstate);
+            if (playbackstate.Equals(PLAYBACK_STATE.STOPPED))
+            {
+                playerfootsteps.start();
+            }
+        }
+        else
+        {
+            playerfootsteps.stop(STOP_MODE.ALLOWFADEOUT);
+        }
+    }
 }
+
 
