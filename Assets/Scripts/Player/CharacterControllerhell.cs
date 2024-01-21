@@ -49,14 +49,9 @@ public class CharacterControllerhell : MonoBehaviour
 
         // Check if the scroll button is being used
         float scrollInput = Input.GetAxis("Mouse ScrollWheel");
-        if (scrollInput != 0f)
-        {
-            Debug.Log("Scrolling");
-            if (!isScrolling) // Start scrolling animation only if not already scrolling
-            {
-                StartScrollAnimation();
-            }
-        }
+        float scrollingInput = Input.GetAxis("Horizontal");
+        //Debug.Log(scrollingInput);
+        animator.SetFloat("IsPlay", Mathf.Abs(scrollingInput));
 
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
@@ -65,18 +60,6 @@ public class CharacterControllerhell : MonoBehaviour
         }
 
         UpdateSound();
-    }
-
-    private void StartScrollAnimation()
-    {
-        animator.SetBool("IsPlaying", true);
-        isScrolling = true;
-    }
-
-    private void StopScrollAnimation()
-    {
-        animator.SetBool("IsPlaying", false);
-        isScrolling = false;
     }
 
     private void Jump()

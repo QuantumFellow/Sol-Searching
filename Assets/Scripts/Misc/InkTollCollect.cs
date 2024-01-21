@@ -36,7 +36,7 @@ public class InkTollCollect : MonoBehaviour
                 // Trigger the animation
                 if (animator != null)
                 {
-                    animator.SetInteger("InkCollected", collectibleCount);
+                    animator.SetInteger("Ink", collectibleCount);
                 }
             }
         }
@@ -44,6 +44,6 @@ public class InkTollCollect : MonoBehaviour
 
     void ResetInt()
     {
-        animator.SetInteger("InkCollected", 0);
+        animator.SetInteger("Ink", 0);
     }
 }
