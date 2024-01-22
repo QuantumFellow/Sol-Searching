@@ -6,6 +6,7 @@ public class InkTollCollect : MonoBehaviour
 {
     public int collectibleCount = 0;  // Variable to store the number of collectibles collected
     public Animator animator;  // Reference to the Animator component for animation
+    public int Toll;
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +32,7 @@ public class InkTollCollect : MonoBehaviour
             Destroy(other.gameObject);
 
             // Check if the required number of collectibles has been reached
-            if (collectibleCount >= 4)
+            if (collectibleCount >= Toll)
             {
                 // Trigger the animation
                 if (animator != null)

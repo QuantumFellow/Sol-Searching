@@ -1147,9 +1147,9 @@
     "m_ShaderOutputName": "In",
     "m_StageCapability": 3,
     "m_Value": {
-        "x": 1.0,
-        "y": 1.0,
-        "z": 1.0
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
     },
     "m_DefaultValue": {
         "x": 0.0,
@@ -1876,9 +1876,9 @@
     "m_ShaderOutputName": "To",
     "m_StageCapability": 3,
     "m_Value": {
-        "x": 0.6415094137191773,
-        "y": 0.6415094137191773,
-        "z": 0.6415094137191773
+        "x": 0.1603773832321167,
+        "y": 0.1603773832321167,
+        "z": 0.1603773832321167
     },
     "m_DefaultValue": {
         "x": 0.0,

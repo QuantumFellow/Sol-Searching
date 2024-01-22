@@ -56,8 +56,9 @@ public class CharacterControllerhell : MonoBehaviour
             Debug.Log("Scrolling");
             if (!isScrolling) // Start scrolling animation only if not already scrolling
             {
-                StartScrollAnimation();
+                animator.SetFloat("IsPlay", Mathf.Abs(scrollInput));
             }
+            scrollInput = 0;
         }
 
 
@@ -69,17 +70,7 @@ public class CharacterControllerhell : MonoBehaviour
         UpdateSound();
     }
 
-    private void StartScrollAnimation()
-    {
-        animator.SetBool("IsPlaying", true);
-        isScrolling = true;
-    }
 
-    private void StopScrollAnimation()
-    {
-        animator.SetBool("IsPlaying", false);
-        isScrolling = false;
-    }
 
     private void Jump()
     {
