@@ -11,6 +11,9 @@ public class FMODEvents : MonoBehaviour
     [field: Header("Collection SFX")]
     [field: SerializeField] public EventReference CollectionSound { get; private set; }
 
+    [field: Header("Character Talk SFX")]
+    [field: SerializeField] public EventReference WellInteract { get; private set; }
+
     public static FMODEvents instance { get; private set; }
 
     private void Awake()

@@ -54,11 +54,7 @@ public class CharacterControllerhell : MonoBehaviour
         if (scrollInput != 0f)
         {
             Debug.Log("Scrolling");
-            if (!isScrolling) // Start scrolling animation only if not already scrolling
-            {
-                animator.SetFloat("IsPlay", Mathf.Abs(scrollInput));
-            }
-            scrollInput = 0;
+            animator.SetFloat("IsPlay", 0.2f);
         }
 
 
@@ -99,6 +95,11 @@ public class CharacterControllerhell : MonoBehaviour
         {
             playerfootsteps.stop(STOP_MODE.ALLOWFADEOUT);
         }
+    }
+
+    public void StopPlaying()
+    {
+        animator.SetFloat("IsPlay", 0f);
     }
 }
 
