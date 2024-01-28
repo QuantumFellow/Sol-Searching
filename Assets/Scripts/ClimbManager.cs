@@ -36,7 +36,7 @@ public class ClimbManager : MonoBehaviour
     void OnTriggerStay2D(Collider2D other)
     {
         // Check if the player is in contact with a climbable object
-        if (other.gameObject.layer == LayerMask.NameToLayer("Chladni"))
+        if (other.gameObject.layer == LayerMask.NameToLayer("Climbable"))
         {
             isClimbing = true;
             rb2d.gravityScale = 0f; // Disable gravity while climbing
@@ -46,7 +46,7 @@ public class ClimbManager : MonoBehaviour
     void OnTriggerExit2D(Collider2D other)
     {
         // Reset climbing state when leaving the climbable object
-        if (other.gameObject.layer == LayerMask.NameToLayer("Chladni"))
+        if (other.gameObject.layer == LayerMask.NameToLayer("Climbable"))
         {
             isClimbing = false;
             rb2d.gravityScale = 1f; // Restore gravity when not climbing

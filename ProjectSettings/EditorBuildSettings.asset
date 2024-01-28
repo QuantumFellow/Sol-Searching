@@ -12,8 +12,14 @@ EditorBuildSettings:
     path: Assets/Scenes/WithinBuild/C_Cutscene_Monic.unity
     guid: e600f56eb9b13034fbadbc7946328416
   - enabled: 1
-    path: Assets/Scenes/WithinBuild/D_Level_1.unity
-    guid: 9b5c8dedfe76b044ea881031f15533df
+    path: Assets/Scenes/WithinBuild/D_Level.unity
+    guid: 93d8e3a21bdbc8148b7875b68de2102b
+  - enabled: 1
+    path: Assets/Scenes/WithinBuild/E_Cutscene.unity
+    guid: f8caacd99729f0745a00f4e8895d29ce
+  - enabled: 1
+    path: Assets/Scenes/WithinBuild/F_Level.unity
+    guid: 224d0d826e713004a9ddb1703eda4816
   - enabled: 1
     path: Assets/Scenes/ChladniTest.unity
     guid: c842546741a6c2d438d991cfe4dffba1

@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class nextScene : MonoBehaviour
 {
+    public float TimeUntilNextScene = 15f; 
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,7 @@ public class nextScene : MonoBehaviour
     
     IEnumerator NextScene()
     {
-        yield return new WaitForSeconds(7f);
+        yield return new WaitForSeconds(TimeUntilNextScene);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
