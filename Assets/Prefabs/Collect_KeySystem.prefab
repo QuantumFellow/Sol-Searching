@@ -28,11 +28,11 @@ Transform:
   m_GameObject: {fileID: 129615915864031329}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.96, y: -0.53, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.34974, y: 0.34974, z: 0.69948}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &129615915864031343
 SpriteRenderer:
@@ -74,9 +74,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0, g: 0.19427729, b: 1, a: 1}
+  m_SortingOrder: 3
+  m_Sprite: {fileID: 21300000, guid: 4b0e3af5f8b90f0499f4c2777881ded4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -100,13 +100,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Collectible: {fileID: 129615915864031329}
   ScoreValue: 10
-  CollectionSound:
-    Guid:
-      Data1: -685150383
-      Data2: 1132597456
-      Data3: 338332835
-      Data4: 185786909
-    Path: event:/Coin Collected
 --- !u!58 &129615915864031341
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -122,4 +115,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 2.45

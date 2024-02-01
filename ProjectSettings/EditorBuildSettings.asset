@@ -21,9 +21,18 @@ EditorBuildSettings:
     path: Assets/Scenes/WithinBuild/F_Level.unity
     guid: 224d0d826e713004a9ddb1703eda4816
   - enabled: 1
-    path: Assets/Scenes/ChladniTest.unity
-    guid: c842546741a6c2d438d991cfe4dffba1
+    path: Assets/Scenes/WithinBuild/G_Level.unity
+    guid: 9d037d0f63c9a494bafbc75b1ad6f6a0
   - enabled: 1
+    path: Assets/Scenes/WithinBuild/H_CutScene.unity
+    guid: ed83e6cb0c1986145bd130303a09e37e
+  - enabled: 1
+    path: Assets/Scenes/WithinBuild/I_Level.unity
+    guid: 4c3aca2817c93b34a8c2a399f3c24575
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: Assets/Scenes/ChladniTest.unity
+    guid: c842546741a6c2d438d991cfe4dffba1
   m_configObjects: {}

@@ -50,14 +50,140 @@ MonoBehaviour:
       Data2: 1263058119
       Data3: -2019836768
       Data4: -392180973
-    Path: event:/PlayerFootsteps
+    Path: event:/SFX/Player/PlayerFootsteps
+  <JumpSFX>k__BackingField:
+    Guid:
+      Data1: 1768647848
+      Data2: 1236122246
+      Data3: -285218166
+      Data4: 481705144
+    Path: event:/SFX/Player/Jump
+  <Impact>k__BackingField:
+    Guid:
+      Data1: 1686854406
+      Data2: 1132906580
+      Data3: -191634018
+      Data4: 311571839
+    Path: event:/SFX/Player/Impact
+  <BowUp>k__BackingField:
+    Guid:
+      Data1: -1276205567
+      Data2: 1232463966
+      Data3: 1532032945
+      Data4: -1312848479
+    Path: event:/SFX/Player/BowUp
+  <BowDown>k__BackingField:
+    Guid:
+      Data1: -718663696
+      Data2: 1225801532
+      Data3: -434375517
+      Data4: -235244559
+    Path: event:/SFX/Player/BowDown
+  <Violin>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <SilenceHurt>k__BackingField:
+    Guid:
+      Data1: 2043095063
+      Data2: 1202853785
+      Data3: -1995795312
+      Data4: 1574279673
+    Path: event:/SFX/Silence/Hurt
   <CollectionSound>k__BackingField:
     Guid:
       Data1: -685150383
       Data2: 1132597456
       Data3: 338332835
       Data4: 185786909
-    Path: event:/Coin Collected
+    Path: event:/SFX/Coin Collected
+  <WellInteract>k__BackingField:
+    Guid:
+      Data1: -1613077216
+      Data2: 1259755186
+      Data3: 1574827174
+      Data4: 146326342
+    Path: event:/SFX/Player/TextTone
+  <SilenceInteract>k__BackingField:
+    Guid:
+      Data1: 811012980
+      Data2: 1227962482
+      Data3: 1727943346
+      Data4: 458670059
+    Path: event:/SFX/Silence/TextTone_Silence
+  <SignInteract>k__BackingField:
+    Guid:
+      Data1: 366960366
+      Data2: 1115875178
+      Data3: -1171885931
+      Data4: -1325324006
+    Path: event:/SFX/MISC/SignTextTone
+  <Weather>k__BackingField:
+    Guid:
+      Data1: 918581347
+      Data2: 1291143306
+      Data3: 271546274
+      Data4: -888461045
+    Path: event:/SFX/Weather
+  <c3>k__BackingField:
+    Guid:
+      Data1: 787839068
+      Data2: 1087473332
+      Data3: -1231876717
+      Data4: 1414761815
+    Path: event:/SFX/Interact/Puzzles/C3
+  <d3>k__BackingField:
+    Guid:
+      Data1: 1217247132
+      Data2: 1332157133
+      Data3: 218901411
+      Data4: 1230334110
+    Path: event:/SFX/Interact/Puzzles/D3
+  <e3>k__BackingField:
+    Guid:
+      Data1: 1527114876
+      Data2: 1260222464
+      Data3: 1675887232
+      Data4: 1404012345
+    Path: event:/SFX/Interact/Puzzles/E3
+  <f3>k__BackingField:
+    Guid:
+      Data1: 723502900
+      Data2: 1214125708
+      Data3: 1120395140
+      Data4: -1614082926
+    Path: event:/SFX/Interact/Puzzles/F3
+  <g3>k__BackingField:
+    Guid:
+      Data1: -553147019
+      Data2: 1103075972
+      Data3: -397806147
+      Data4: 838319151
+    Path: event:/SFX/Interact/Puzzles/G3
+  <a3>k__BackingField:
+    Guid:
+      Data1: -1406719556
+      Data2: 1077199013
+      Data3: -578570876
+      Data4: 221958444
+    Path: event:/SFX/Interact/Puzzles/A3
+  <b3>k__BackingField:
+    Guid:
+      Data1: -721398867
+      Data2: 1238652646
+      Data3: -1829372785
+      Data4: -1382151311
+    Path: event:/SFX/Interact/Puzzles/B3
+  <c4>k__BackingField:
+    Guid:
+      Data1: -1543242586
+      Data2: 1092990233
+      Data3: -1692565315
+      Data4: -1043970080
+    Path: event:/SFX/Interact/Puzzles/C4
 --- !u!1 &6375259946218922950
 GameObject:
   m_ObjectHideFlags: 0
@@ -67,6 +193,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6375259946218922944}
+  - component: {fileID: 1129411113}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -89,6 +216,20 @@ Transform:
   m_Father: {fileID: 6375259946600002062}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1129411113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6375259946218922950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b992f9407ed9f1c45be7a95f265c664c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuUI: {fileID: 0}
+  savecon: {fileID: 0}
 --- !u!1 &6375259946377538835
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,5 +306,5 @@ Transform:
   - {fileID: 6375259946218922944}
   - {fileID: 6375259946377538834}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

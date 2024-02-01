@@ -32,7 +32,7 @@
 			<destination>{d7cdfb6f-3fc6-4656-bc15-ba145ea9df1f}</destination>
 		</relationship>
 		<relationship name="banks">
-			<destination>{403aa887-35aa-40b6-a415-44b33013ecf7}</destination>
+			<destination>{3d47d756-8d46-49d9-8917-799080bee6ce}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{4d78b52d-4248-44b5-8d24-7938e51c298f}">
@@ -56,7 +56,7 @@
 			<destination>{f416e248-9a88-42bb-a3f9-49349acfd5f6}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{51e4ea5c-7f82-41bd-9caa-0335fe48d3f5}</destination>
+			<destination>{ae7e6a95-d9f2-4809-957a-5ac5206b65c5}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{7ff810ab-6b26-49ef-87fe-9913c27647b8}" />
@@ -72,6 +72,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{1e809824-5ffa-48ea-bc3b-23bd9240dcd4}">
+		<property name="volume">
+			<value>-11.5</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{e499a360-ae3b-40c2-ab2b-2089242e0908}</destination>
 		</relationship>
@@ -120,7 +123,7 @@
 			<value>pitch</value>
 		</property>
 		<property name="amount">
-			<value>6</value>
+			<value>3.5</value>
 		</property>
 	</object>
 	<object class="SingleSound" id="{49cc2e03-245e-40e3-be00-1a68c0d47334}">

@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using FMOD.Studio;
+using FMOD;
 
 public class CharacterControllerhell : MonoBehaviour
 {
@@ -11,10 +12,13 @@ public class CharacterControllerhell : MonoBehaviour
     public Transform GroundCheck;
     public Animator animator;
     private SpriteRenderer spriteRenderer;
+    private bool hasPlayedUpSound = false;
+    private bool hasPlayedDownSound = false;
 
 
     //audio
     private EventInstance playerfootsteps;
+
 
     private bool isScrolling; // Added variable to track if scrolling is happening
 
@@ -47,13 +51,35 @@ public class CharacterControllerhell : MonoBehaviour
 
 
 
+
         // Check if the scroll button is being used
         float scrollInput = Input.GetAxis("Mouse ScrollWheel");
 
-        print(scrollInput);
+        if (scrollInput > 0 && !hasPlayedUpSound)
+        {
+            // Scrolling up
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.BowUp, this.transform.position);
+            hasPlayedUpSound = true;
+            hasPlayedDownSound = false;
+        }
+        else if (scrollInput < 0 && !hasPlayedDownSound)
+        {
+            // Scrolling down
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.BowDown, this.transform.position);
+            hasPlayedDownSound = true;
+            hasPlayedUpSound = false;
+        }
+
+        // Reset flags when the mouse wheel is not being scrolled
+        if (scrollInput == 0)
+        {
+            hasPlayedUpSound = false;
+            hasPlayedDownSound = false;
+        }
+
+         //print(scrollInput);
         if (scrollInput != 0f)
         {
-            Debug.Log("Scrolling");
             animator.SetFloat("IsPlay", 0.2f);
         }
 
@@ -72,7 +98,7 @@ public class CharacterControllerhell : MonoBehaviour
     {
         animator.SetBool("IsJumping", true);
         Reggie.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
-        Debug.Log("isjumping");
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.JumpSFX, this.transform.position);
     }
 
     public void resetJumpAnim()
@@ -100,6 +126,10 @@ public class CharacterControllerhell : MonoBehaviour
     public void StopPlaying()
     {
         animator.SetFloat("IsPlay", 0f);
+    }
+    IEnumerator WaitForEndNote()
+    {
+        yield return new WaitForSeconds(1f);
     }
 }
 

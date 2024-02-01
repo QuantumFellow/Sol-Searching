@@ -8,6 +8,9 @@ public class AudioManager : MonoBehaviour
 {
     private List<EventInstance> eventInstances;
     public static AudioManager instance {  get; private set; }
+    private List<StudioEventEmitter> eventEmitters;
+
+    private EventInstance ambienceEventInstance;
 
     private void Awake()
     {
@@ -17,6 +20,23 @@ public class AudioManager : MonoBehaviour
         }
         instance = this;
         eventInstances = new List<EventInstance>();
+        eventEmitters = new List<StudioEventEmitter>();
+    }
+
+    private void Start()
+    {
+        InitializeAmbience(FMODEvents.instance.Weather);
+    }
+
+    private void InitializeAmbience(EventReference ambienceEventReference)
+    {
+        ambienceEventInstance = CreateEventInstance(ambienceEventReference);
+        ambienceEventInstance.start();
+    }
+
+    public void SetWeather(string parameterName, float parameterValue)
+    {
+        ambienceEventInstance.setParameterByName(parameterName, parameterValue);
     }
 
     public void PlayOneShot(EventReference sound, Vector3 WorldPos)
@@ -30,6 +50,13 @@ public class AudioManager : MonoBehaviour
         eventInstances.Add(eventInstance);
         return eventInstance;
     }
+    public StudioEventEmitter InitializeEventEmitter(EventReference eventReference, GameObject emitterGameObject)
+    {
+        StudioEventEmitter emitter = emitterGameObject.GetComponent<StudioEventEmitter>();
+        emitter.EventReference = eventReference;
+        eventEmitters.Add(emitter);
+        return emitter;
+    }
 
     private void Cleanup()
     {
@@ -37,6 +64,11 @@ public class AudioManager : MonoBehaviour
         {
             eventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
             eventInstance.release();
+        }
+        //Stops all emitters
+        foreach (StudioEventEmitter emitter in eventEmitters)
+        {
+            emitter.Stop();
         }
     }
 

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{84440adf-acb1-46f7-967b-54c0a6d88108}">
+		<property name="name">
+			<value>Lightning</value>
+		</property>
+		<relationship name="folder">
+			<destination>{b9321f4f-be97-4adc-bb47-aed6d62ccfe5}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{9c509cce-fcc5-4279-a863-d84e73810877}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{9c509cce-fcc5-4279-a863-d84e73810877}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

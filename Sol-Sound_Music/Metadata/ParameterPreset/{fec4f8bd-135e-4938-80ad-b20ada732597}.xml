@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{fec4f8bd-135e-4938-80ad-b20ada732597}">
+		<property name="name">
+			<value>ShallowInk</value>
+		</property>
+		<relationship name="folder">
+			<destination>{b9321f4f-be97-4adc-bb47-aed6d62ccfe5}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{965fa29c-7f32-43ff-93f8-1c6831c6695a}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{965fa29c-7f32-43ff-93f8-1c6831c6695a}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

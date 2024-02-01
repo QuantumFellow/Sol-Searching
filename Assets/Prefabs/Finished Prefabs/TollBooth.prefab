@@ -35,7 +35,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4483024339324875428
 SpriteRenderer:
@@ -120,7 +120,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.18, y: -5.41}
@@ -150,6 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectibleCount: 0
   animator: {fileID: 4483024339324875434}
+  Toll: 4
 --- !u!114 &4483024339324875433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,6 +163,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc79271e8c696024aa38f8590eb16bc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  proximityDistance: 2
+  Chladni: {fileID: 0}
 --- !u!95 &4483024339324875434
 Animator:
   serializedVersion: 4

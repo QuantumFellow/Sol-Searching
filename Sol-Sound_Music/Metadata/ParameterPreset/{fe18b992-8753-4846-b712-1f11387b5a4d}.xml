@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{fe18b992-8753-4846-b712-1f11387b5a4d}">
+		<property name="name">
+			<value>Rain</value>
+		</property>
+		<relationship name="folder">
+			<destination>{49549123-96fa-4c3b-adaf-76779d40b5f1}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{17c77209-8f8e-484c-a2e3-17adf1d78221}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{17c77209-8f8e-484c-a2e3-17adf1d78221}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.15000000596046448</value>
+		</property>
+	</object>
+</objects>

@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 00000237FB562188 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000022E4486DE38 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -18,42 +18,62 @@
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 821696
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 14336
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 839872
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 26240
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000047339FF008
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A41B5FF0E8
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9B3103F70
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9B3103F30
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9B3104050
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9B3104110
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000237A4444AE8
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='LeGasp', format=5, channels=2, frequency=48000, lengthbytes=3872, lengthpcm=18098, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.052887.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 821696
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 14336
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000047339FF008
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9B3103F70
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9B3103F30
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9B3104050
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9B3104110
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000237A4445118
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9B3633F70
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9B3633F30
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9B3634050
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9B3634110
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000231D501A078
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='CHO_Callout', format=5, channels=2, frequency=48000, lengthbytes=42912, lengthpcm=157554, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.360291.
-[LOG] SoundI::release                          :  (00000237A42631F8)
-[LOG] SoundI::release                          :     LeGasp (00000237FB317088)
-[LOG] SoundI::release                          :  (00000237A42634D8)
-[LOG] SoundI::release                          :     CHO_Callout (00000237FB317228)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 216640
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 16800
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A41B5FF0E8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9B3633F70
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9B3633F30
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9B3634050
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9B3634110
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000022E4B562808
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='VIO_Callout', format=5, channels=2, frequency=48000, lengthbytes=52992, lengthpcm=166098, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.236725.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 839872
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 26240
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A41B5FF0E8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9B3633F70
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9B3633F30
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9B3634050
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9B3634110
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000022E4B560B28
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='LeGasp', format=5, channels=2, frequency=48000, lengthbytes=3872, lengthpcm=18098, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.052887.
+[LOG] SoundI::release                          :  (00000231EBB5E3E8)
+[LOG] SoundI::release                          :     CHO_Callout (0000022E9393DEA8)
+[LOG] SoundI::release                          :  (00000231FD599D78)
+[LOG] SoundI::release                          :     LeGasp (00000231DCFAFC48)
+[LOG] SoundI::release                          :  (00000231FD599A98)
+[LOG] SoundI::release                          :     VIO_Callout (00000231DCFAF908)
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 

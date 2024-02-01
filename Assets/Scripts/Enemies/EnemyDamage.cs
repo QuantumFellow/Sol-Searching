@@ -11,7 +11,7 @@ public class EnemyDamage : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") || other.CompareTag("Pipe"))
+        if (other.CompareTag("Pipe") || other.CompareTag("Enemy"))
         {
             //checks for player tag
             HealthManager playerHealth = other.GetComponent<HealthManager>();

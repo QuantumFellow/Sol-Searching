@@ -15,10 +15,88 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638420520244390356
+  lastModified: 638423817109109740
   FileSizes:
   - Name: 
-    Value: 1422
+    Value: 2186
+  Exists: 1
+--- !u!114 &-8813751589854228092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Interact/Puzzles/A3
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Interact/Puzzles/A3
+  Guid:
+    Data1: -1406719556
+    Data2: 1077199013
+    Data3: -578570876
+    Data4: 221958444
+  Banks:
+  - {fileID: 1236484755925571135}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-8530460069095148357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Interact/Puzzles/E3
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Interact/Puzzles/E3
+  Guid:
+    Data1: 1527114876
+    Data2: 1260222464
+    Data3: 1675887232
+    Data4: 1404012345
+  Banks:
+  - {fileID: 1236484755925571135}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-8007956986496196768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Weather/Rain
+  m_EditorClassIdentifier: 
+  Name: Rain
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3710187571
+    data2: 429232463
+  Type: 0
+  IsGlobal: 0
+  Labels: []
   Exists: 1
 --- !u!114 &-6815568749758814116
 MonoBehaviour:
@@ -39,7 +117,7 @@ MonoBehaviour:
     Data3: -477751418
     Data4: 2137294553
   Banks:
-  - {fileID: 1236484755925571135}
+  - {fileID: 5037143063917205352}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -71,30 +149,6 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &-6330043378405861494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Weather/Rain
-  m_EditorClassIdentifier: 
-  Name: Rain
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 361541365
-    data2: 2888556714
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
 --- !u!114 &-6121997606306595027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,7 +168,7 @@ MonoBehaviour:
     Data3: 1574827174
     Data4: 146326342
   Banks:
-  - {fileID: 1236484755925571135}
+  - {fileID: 5037143063917205352}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -122,6 +176,24 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-5333309275733579278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambience.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODBanks/Desktop/Ambience.bank
+  Name: Ambience
+  StudioPath: bank:/Ambience
+  lastModified: 638423817108809442
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-5091531796420401760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,14 +213,41 @@ MonoBehaviour:
     Data3: -2019836768
     Data4: -392180973
   Banks:
-  - {fileID: 1236484755925571135}
+  - {fileID: 5037143063917205352}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 400
+  Length: 366
+--- !u!114 &-3962774270206921621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Silence/TextTone_Silence
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Silence/TextTone_Silence
+  Guid:
+    Data1: 811012980
+    Data2: 1227962482
+    Data3: 1727943346
+    Data4: 458670059
+  Banks:
+  - {fileID: 1236484755925571135}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-3530861381133270547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,7 +263,7 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638420520244380348
+  lastModified: 638423817109089746
   FileSizes: []
   Exists: 1
 --- !u!114 &-3073169467022970928
@@ -194,6 +293,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-679654744783329905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Interact/Puzzles/C3
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Interact/Puzzles/C3
+  Guid:
+    Data1: 787839068
+    Data2: 1087473332
+    Data3: -1231876717
+    Data4: 1414761815
+  Banks:
+  - {fileID: 1236484755925571135}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-298872892991856227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Interact/Puzzles/D3
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Interact/Puzzles/D3
+  Guid:
+    Data1: 1217247132
+    Data2: 1332157133
+    Data3: 218901411
+    Data4: 1230334110
+  Banks:
+  - {fileID: 1236484755925571135}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,25 +363,68 @@ MonoBehaviour:
   - {fileID: -8853147864567503856}
   - {fileID: -3530861381133270547}
   - {fileID: 1236484755925571135}
+  - {fileID: -5333309275733579278}
+  - {fileID: 5037143063917205352}
   EditorEvents:
   - {fileID: 6174669627505589863}
   - {fileID: 1777760292468438587}
   - {fileID: -3073169467022970928}
   - {fileID: 5794608049696377134}
   - {fileID: 3232760831739676778}
-  - {fileID: 3965405724482047026}
   - {fileID: 8904677164352222381}
   - {fileID: -6121997606306595027}
   - {fileID: 3919417851404677561}
   - {fileID: -5091531796420401760}
   - {fileID: -6815568749758814116}
+  - {fileID: 1876419967621782406}
+  - {fileID: 4020981638056467285}
+  - {fileID: -3962774270206921621}
+  - {fileID: 1085641423083840744}
+  - {fileID: 6891610557943598955}
+  - {fileID: 5175283898804164607}
+  - {fileID: 3450664206995722072}
+  - {fileID: 5829421431931836200}
+  - {fileID: -679654744783329905}
+  - {fileID: 1964853649111220004}
+  - {fileID: -8530460069095148357}
+  - {fileID: -298872892991856227}
+  - {fileID: 8649138997159469516}
+  - {fileID: 3612768291516623326}
+  - {fileID: -8813751589854228092}
   EditorParameters: []
   MasterBanks:
   - {fileID: -3530861381133270547}
   StringsBanks:
   - {fileID: -8853147864567503856}
-  cacheTime: 638420520245079122
+  cacheTime: 638423817110630200
   cacheVersion: 131616
+--- !u!114 &1085641423083840744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Silence/Hurt
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Silence/Hurt
+  Guid:
+    Data1: 2043095063
+    Data2: 1202853785
+    Data3: -1995795312
+    Data4: 1574279673
+  Banks:
+  - {fileID: 1236484755925571135}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &1236484755925571135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,32 +440,8 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638420520245079122
+  lastModified: 638423817110630200
   FileSizes: []
-  Exists: 1
---- !u!114 &1547380703170093278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Weather/Wind
-  m_EditorClassIdentifier: 
-  Name: Wind
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2699714176
-    data2: 2497220452
-  Type: 0
-  IsGlobal: 0
-  Labels: []
   Exists: 1
 --- !u!114 &1777760292468438587
 MonoBehaviour:
@@ -298,6 +470,62 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 55599
+--- !u!114 &1876419967621782406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Weather
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Weather
+  Guid:
+    Data1: 918581347
+    Data2: 1291143306
+    Data3: 271546274
+    Data4: -888461045
+  Banks:
+  - {fileID: -5333309275733579278}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 5669637437892460320}
+  - {fileID: -8007956986496196768}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &1964853649111220004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Interact/Puzzles/G3
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Interact/Puzzles/G3
+  Guid:
+    Data1: -553147019
+    Data2: 1103075972
+    Data3: -397806147
+    Data4: 838319151
+  Banks:
+  - {fileID: 1236484755925571135}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &3232760831739676778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -316,6 +544,60 @@ MonoBehaviour:
     Data2: 1256304543
     Data3: -2085811273
     Data4: -191840691
+  Banks:
+  - {fileID: 1236484755925571135}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3450664206995722072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/BowDown
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/BowDown
+  Guid:
+    Data1: -718663696
+    Data2: 1225801532
+    Data3: -434375517
+    Data4: -235244559
+  Banks:
+  - {fileID: 5037143063917205352}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3612768291516623326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Interact/Puzzles/B3
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Interact/Puzzles/B3
+  Guid:
+    Data1: -721398867
+    Data2: 1238652646
+    Data3: -1829372785
+    Data4: -1382151311
   Banks:
   - {fileID: 1236484755925571135}
   IsStream: 0
@@ -352,7 +634,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &3965405724482047026
+--- !u!114 &4020981638056467285
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -362,25 +644,92 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Weather
+  m_Name: event:/SFX/Player/Jump
   m_EditorClassIdentifier: 
-  Path: event:/Weather
+  Path: event:/SFX/Player/Jump
   Guid:
-    Data1: 918581347
-    Data2: 1291143306
-    Data3: 271546274
-    Data4: -888461045
+    Data1: 1768647848
+    Data2: 1236122246
+    Data3: -285218166
+    Data4: 481705144
   Banks:
-  - {fileID: -3530861381133270547}
+  - {fileID: 5037143063917205352}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters:
-  - {fileID: 1547380703170093278}
-  - {fileID: -6330043378405861494}
+  Parameters: []
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &5037143063917205352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Player SFX.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODBanks/Desktop/Player SFX.bank
+  Name: Player SFX
+  StudioPath: bank:/Player SFX
+  lastModified: 638423817109664958
+  FileSizes: []
+  Exists: 1
+--- !u!114 &5175283898804164607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/BowUp
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/BowUp
+  Guid:
+    Data1: -1276205567
+    Data2: 1232463966
+    Data3: 1532032945
+    Data4: -1312848479
+  Banks:
+  - {fileID: 5037143063917205352}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &5669637437892460320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Weather/Wind
+  m_EditorClassIdentifier: 
+  Name: Wind
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0.066667
+  ID:
+    data1: 287522579
+    data2: 1906977518
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &5794608049696377134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -408,6 +757,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 10000
   Length: 0
+--- !u!114 &5829421431931836200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Interact/Puzzles/F3
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Interact/Puzzles/F3
+  Guid:
+    Data1: 723502900
+    Data2: 1214125708
+    Data3: 1120395140
+    Data4: -1614082926
+  Banks:
+  - {fileID: 1236484755925571135}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &6174669627505589863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -433,6 +809,60 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters:
   - {fileID: -6633948413085224773}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &6891610557943598955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/MISC/SignTextTone
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/MISC/SignTextTone
+  Guid:
+    Data1: 366960366
+    Data2: 1115875178
+    Data3: -1171885931
+    Data4: -1325324006
+  Banks:
+  - {fileID: 1236484755925571135}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &8649138997159469516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Interact/Puzzles/C4
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Interact/Puzzles/C4
+  Guid:
+    Data1: -1543242586
+    Data2: 1092990233
+    Data3: -1692565315
+    Data4: -1043970080
+  Banks:
+  - {fileID: 1236484755925571135}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
   MinDistance: 1
   MaxDistance: 20
   Length: 0
