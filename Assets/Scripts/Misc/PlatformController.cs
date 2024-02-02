@@ -34,11 +34,12 @@ public class PlatformController : MonoBehaviour
             if (distance < proximityDistance && Input.GetAxis("Mouse ScrollWheel") < 0f)
             {
                 animator.SetBool("SummonPlat", true);
+                AudioManager.instance.PlayOneShot(FMODEvents.instance.Ink_UP, this.transform.position);
             }
             else if (distance < proximityDistance && Input.GetAxis("Mouse ScrollWheel") > 0f)
             {
                 animator.SetBool("SummonSpike", true);
-
+                AudioManager.instance.PlayOneShot(FMODEvents.instance.Ink_UP, this.transform.position);
                 // Start a coroutine to delay the execution of the next animation
                 if (delayCoroutine != null)
                 {

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{fc118b0a-727e-4b9c-ae72-cd57ce6ef518}">
+		<property name="assetPath">
+			<value>478145__aris621__nasty-knife-stab-2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.0849886621315195</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b4329817-9a79-434b-9978-04834fae005b}</destination>
+		</relationship>
+	</object>
+</objects>

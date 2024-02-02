@@ -1572,10 +1572,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3000683402215276777, guid: 8fdefe8e069588740beb2c79a5085e0c, type: 3}
       propertyPath: dialogue.Array.data[0]
-      value: Where has everybody gone?
+      value: I can't go home
       objectReference: {fileID: 0}
     - target: {fileID: 3000683402215276777, guid: 8fdefe8e069588740beb2c79a5085e0c, type: 3}
       propertyPath: dialogue.Array.data[1]
+      value: It's so lonely
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000683402215276777, guid: 8fdefe8e069588740beb2c79a5085e0c, type: 3}
+      propertyPath: dialogue.Array.data[2]
       value: I hope they're okay...
       objectReference: {fileID: 0}
     - target: {fileID: 3000683402215276779, guid: 8fdefe8e069588740beb2c79a5085e0c, type: 3}
@@ -1588,7 +1592,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3000683402215276782, guid: 8fdefe8e069588740beb2c79a5085e0c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 24.89
+      value: -15.7
       objectReference: {fileID: 0}
     - target: {fileID: 3000683402215276782, guid: 8fdefe8e069588740beb2c79a5085e0c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1721,7 +1725,7 @@ PrefabInstance:
       objectReference: {fileID: 2058888157}
     - target: {fileID: 3000683402215276777, guid: 8fdefe8e069588740beb2c79a5085e0c, type: 3}
       propertyPath: dialogue.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3000683402215276777, guid: 8fdefe8e069588740beb2c79a5085e0c, type: 3}
       propertyPath: dialogue.Array.data[0]
@@ -1729,11 +1733,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3000683402215276777, guid: 8fdefe8e069588740beb2c79a5085e0c, type: 3}
       propertyPath: dialogue.Array.data[1]
-      value: W-Wait up! Come Back!
+      value: She was the one singing my melody.
       objectReference: {fileID: 0}
     - target: {fileID: 3000683402215276777, guid: 8fdefe8e069588740beb2c79a5085e0c, type: 3}
       propertyPath: dialogue.Array.data[2]
-      value: 
+      value: W-Wait up! Come Back!
       objectReference: {fileID: 0}
     - target: {fileID: 3000683402215276779, guid: 8fdefe8e069588740beb2c79a5085e0c, type: 3}
       propertyPath: m_Name
@@ -2048,6 +2052,10 @@ PrefabInstance:
     - target: {fileID: 739963648469563743, guid: 2de2e12fee9b0834c87a07be5dab3d12, type: 3}
       propertyPath: m_Name
       value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 739963648958835615, guid: 2de2e12fee9b0834c87a07be5dab3d12, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -2457,6 +2465,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8546714977881674386, guid: 3ee6612426a2feb488067d9798bd5072, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 2058888156}
     - target: {fileID: 8546714977881674399, guid: 3ee6612426a2feb488067d9798bd5072, type: 3}
       propertyPath: m_Name
       value: InteractionBox

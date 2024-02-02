@@ -27,6 +27,7 @@ public class InkTollCollect : MonoBehaviour
         {
             // Increment the collectible count
             collectibleCount++;
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.CollectionSound, this.transform.position);
 
             // Destroy the collected collectible (you can replace this with your own logic)
             Destroy(other.gameObject);
@@ -38,6 +39,7 @@ public class InkTollCollect : MonoBehaviour
                 if (animator != null)
                 {
                     animator.SetInteger("Ink", collectibleCount);
+                    AudioManager.instance.PlayOneShot(FMODEvents.instance.TuningForkUp, this.transform.position);
                 }
             }
         }

@@ -28,6 +28,7 @@ public class InkSpawner : MonoBehaviour
         {
             animator.SetBool("Piercing", true);
             Debug.Log("Collided");
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.PipeHit, this.transform.position);
             spawningCoroutine = StartCoroutine(SpawnPrefabsWithInterval());
         }
         //else if (!isPierced && spawningCoroutine != null)

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{6a494109-61db-4e7f-9cab-056f7b324b6d}">
+		<property name="assetPath">
+			<value>LeverPull.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.82782312925170065</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b4329817-9a79-434b-9978-04834fae005b}</destination>
+		</relationship>
+	</object>
+</objects>

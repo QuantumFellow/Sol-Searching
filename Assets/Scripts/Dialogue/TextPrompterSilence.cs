@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class TextPrompterSilence : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class TextPrompterSilence : MonoBehaviour
     public GameObject PlayerKeyPrompt;
     public Image PlayerImage1;
     public Image PlayerImage2;
-
+    public bool isFinished = false;
 
     public float WordSpeed;
     public bool PlayerInRange;
@@ -106,6 +107,7 @@ public class TextPrompterSilence : MonoBehaviour
         }
         else
         {
+            isFinished = true;
             zeroText();
         }
     }

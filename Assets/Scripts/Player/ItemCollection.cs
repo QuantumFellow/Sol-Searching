@@ -27,7 +27,7 @@ public class ItemCollection : MonoBehaviour
         {
             Debug.Log("Collected");
             Destroy(gameObject);
-            AudioManager.instance.PlayOneShot(FMODEvents.instance.CollectionSound, this.transform.position);
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.KeyPickUp, this.transform.position);
 
             // Update the score using the ScoreManager
             if (saveManager != null)
@@ -37,8 +37,5 @@ public class ItemCollection : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        // You can add other update logic here if needed
-    }
+
 }

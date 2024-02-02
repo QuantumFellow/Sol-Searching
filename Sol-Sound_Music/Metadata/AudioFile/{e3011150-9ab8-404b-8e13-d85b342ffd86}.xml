@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{e3011150-9ab8-404b-8e13-d85b342ffd86}">
+		<property name="assetPath">
+			<value>665183__el_boss__item-or-material-pickup-pop-1-of-3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.071111111111111111</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b4329817-9a79-434b-9978-04834fae005b}</destination>
+		</relationship>
+	</object>
+</objects>

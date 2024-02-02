@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{a80448bc-c21a-424a-a3b5-a364acf52702}">
+		<property name="assetPath">
+			<value>03-Violin - Orchestral (10).wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.92909297052154194</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b4329817-9a79-434b-9978-04834fae005b}</destination>
+		</relationship>
+	</object>
+</objects>

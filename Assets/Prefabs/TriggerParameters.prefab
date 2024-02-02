@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8028185670334172255}
   - component: {fileID: 6540309621760584404}
   - component: {fileID: -8017212524698086047}
+  - component: {fileID: 6428589151101974418}
   m_Layer: 0
   m_Name: TriggerParameters
   m_TagString: Untagged
@@ -87,4 +88,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parameterName: Rain
+  parameterValue: 0
+--- !u!114 &6428589151101974418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7599623808075056800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55527d79dbfb8d14e89f47d1b4387d13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameterName: RadioStatic
   parameterValue: 0

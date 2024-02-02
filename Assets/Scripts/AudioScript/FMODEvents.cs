@@ -8,7 +8,6 @@ public class FMODEvents : MonoBehaviour
     [field: Header("Player SFX")]
     [field: SerializeField] public EventReference PlayerFootsteps { get; private set; }
     [field: SerializeField] public EventReference JumpSFX { get; private set; }
-    [field: SerializeField] public EventReference Impact { get; private set; }
     [field: SerializeField] public EventReference BowUp { get; private set; }
     [field: SerializeField] public EventReference BowDown { get; private set; }
     [field: SerializeField] public EventReference Violin { get; private set; }
@@ -18,6 +17,7 @@ public class FMODEvents : MonoBehaviour
 
     [field: Header("Collection SFX")]
     [field: SerializeField] public EventReference CollectionSound { get; private set; }
+    [field: SerializeField] public EventReference KeyPickUp { get; private set; }
 
     [field: Header("Character Talk SFX")]
     [field: SerializeField] public EventReference WellInteract { get; private set; }
@@ -28,6 +28,18 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference Weather { get; private set; }
 
     [field: Header("Interactables")]
+
+    [field: SerializeField] public EventReference Ink_UP { get; private set; }
+    [field: SerializeField] public EventReference TuningForkUp { get; private set; }
+    [field: SerializeField] public EventReference Dial { get; private set; }
+    [field: SerializeField] public EventReference Lever { get; private set; }
+    [field: SerializeField] public EventReference BridgeRaise { get; private set; }
+    [field: SerializeField] public EventReference ShaftOpen { get; private set; }
+    [field: SerializeField] public EventReference PipeHit { get; private set; }
+    [field: SerializeField] public EventReference Paper { get; private set; }
+    [field: SerializeField] public EventReference Door { get; private set; }
+
+    [field: Header("Puzzles")]
     [field: SerializeField] public EventReference c3 { get; private set; }
     [field: SerializeField] public EventReference d3 { get; private set; }
     [field: SerializeField] public EventReference e3 { get; private set; }

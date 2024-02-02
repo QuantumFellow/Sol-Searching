@@ -58,13 +58,6 @@ MonoBehaviour:
       Data3: -285218166
       Data4: 481705144
     Path: event:/SFX/Player/Jump
-  <Impact>k__BackingField:
-    Guid:
-      Data1: 1686854406
-      Data2: 1132906580
-      Data3: -191634018
-      Data4: 311571839
-    Path: event:/SFX/Player/Impact
   <BowUp>k__BackingField:
     Guid:
       Data1: -1276205567
@@ -81,11 +74,11 @@ MonoBehaviour:
     Path: event:/SFX/Player/BowDown
   <Violin>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1730035949
+      Data2: 1127226893
+      Data3: -477751418
+      Data4: 2137294553
+    Path: event:/SFX/Player/ViolinCallout
   <SilenceHurt>k__BackingField:
     Guid:
       Data1: 2043095063
@@ -100,6 +93,13 @@ MonoBehaviour:
       Data3: 338332835
       Data4: 185786909
     Path: event:/SFX/Coin Collected
+  <KeyPickUp>k__BackingField:
+    Guid:
+      Data1: -4044522
+      Data2: 1156429684
+      Data3: -497338230
+      Data4: -1046932925
+    Path: event:/SFX/Interact/KeyPickUp
   <WellInteract>k__BackingField:
     Guid:
       Data1: -1613077216
@@ -128,6 +128,69 @@ MonoBehaviour:
       Data3: 271546274
       Data4: -888461045
     Path: event:/SFX/Weather
+  <Ink_UP>k__BackingField:
+    Guid:
+      Data1: -2137002899
+      Data2: 1280134519
+      Data3: 2063092147
+      Data4: 2094834147
+    Path: event:/SFX/Interact/InkWell_Up
+  <TuningForkUp>k__BackingField:
+    Guid:
+      Data1: -1283409496
+      Data2: 1287426099
+      Data3: 263986088
+      Data4: -1636785178
+    Path: event:/SFX/Interact/TuningForkup
+  <Dial>k__BackingField:
+    Guid:
+      Data1: -2080644331
+      Data2: 1090429934
+      Data3: -1375477325
+      Data4: -1655786217
+    Path: event:/SFX/Interact/Puzzles/Dial
+  <Lever>k__BackingField:
+    Guid:
+      Data1: 1114393496
+      Data2: 1210818794
+      Data3: 716319131
+      Data4: -780367252
+    Path: event:/SFX/Interact/Puzzles/Lever
+  <BridgeRaise>k__BackingField:
+    Guid:
+      Data1: -270988392
+      Data2: 1211329886
+      Data3: 382452923
+      Data4: -2127354501
+    Path: event:/SFX/Interact/Puzzles/BridgeRaising
+  <ShaftOpen>k__BackingField:
+    Guid:
+      Data1: 751969693
+      Data2: 1200014927
+      Data3: -1193252710
+      Data4: -1051047540
+    Path: event:/SFX/Interact/Puzzles/ShaftOpen
+  <PipeHit>k__BackingField:
+    Guid:
+      Data1: 631982216
+      Data2: 1189228391
+      Data3: -1405054068
+      Data4: -5275771
+    Path: event:/SFX/Interact/PipeHit
+  <Paper>k__BackingField:
+    Guid:
+      Data1: 627090325
+      Data2: 1160614404
+      Data3: -1516646478
+      Data4: -817473908
+    Path: event:/SFX/Interact/PaperUnraveled
+  <Door>k__BackingField:
+    Guid:
+      Data1: 883672776
+      Data2: 1318674632
+      Data3: 1031257278
+      Data4: 758145892
+    Path: event:/SFX/MISC/Door OpenClose
   <c3>k__BackingField:
     Guid:
       Data1: 787839068
@@ -306,5 +369,5 @@ Transform:
   - {fileID: 6375259946218922944}
   - {fileID: 6375259946377538834}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

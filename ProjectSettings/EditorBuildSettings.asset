@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/WithinBuild/A_StartMenu.unity
     guid: a60ba6b228f3ee042b0dbb71908a67b5
   - enabled: 1
+    path: Assets/Scenes/WithinBuild/B_Cutscene.unity
+    guid: a0ab00fa85c71c144baf0fa21454eedd
+  - enabled: 1
     path: Assets/Scenes/WithinBuild/C_Cutscene_Monic.unity
     guid: e600f56eb9b13034fbadbc7946328416
   - enabled: 1
@@ -29,10 +32,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WithinBuild/I_Level.unity
     guid: 4c3aca2817c93b34a8c2a399f3c24575
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
-    path: Assets/Scenes/ChladniTest.unity
-    guid: c842546741a6c2d438d991cfe4dffba1
+  - enabled: 1
+    path: Assets/Scenes/WithinBuild/J_Level.unity
+    guid: db2d2241f45aa71478f3fb47caef2edc
+  - enabled: 1
+    path: Assets/Scenes/WithinBuild/SecretRoute_A.unity
+    guid: 649bf5262784a3749ada7bb6eb6d88f8
+  - enabled: 1
+    path: Assets/Scenes/WithinBuild/SecretRoute_B.unity
+    guid: cfe183a97b7619a4ca25e92b898eaf72
+  - enabled: 1
+    path: Assets/Scenes/WithinBuild/Endings/Ending1.unity
+    guid: f89981c2eb4573041a42627a3e7400f9
+  - enabled: 1
+    path: Assets/Scenes/WithinBuild/Endings/Ending2.unity
+    guid: 040ff7f7d6a7f9e4fa0772443ab1ca32
+  - enabled: 1
+    path: Assets/Scenes/WithinBuild/Endings/Ending2.5.unity
+    guid: e01de16c66aadd948868229a2d2fae5e
+  - enabled: 1
+    path: Assets/Scenes/WithinBuild/Endings/ThankYou.unity
+    guid: d9043eab16cdfd1468c40c2e40cb9ec6
   m_configObjects: {}
