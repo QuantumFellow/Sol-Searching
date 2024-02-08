@@ -109,6 +109,8 @@ public class TextPrompterSilence : MonoBehaviour
         {
             isFinished = true;
             zeroText();
+            PlayerImage1.gameObject.SetActive(false);
+            PlayerImage2.gameObject.SetActive(false);
         }
     }
 
@@ -127,6 +129,8 @@ public class TextPrompterSilence : MonoBehaviour
             PlayerInRange = false;
             PlayerKeyPrompt.SetActive(false);
             zeroText();
+            PlayerImage1.gameObject.SetActive(false);
+            PlayerImage2.gameObject.SetActive(false);
         }
     }
 }

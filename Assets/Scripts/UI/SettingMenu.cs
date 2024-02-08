@@ -8,7 +8,6 @@ using UnityEngine.UI;
 public class SettingMenu : MonoBehaviour
 {
 
-    public AudioMixer audioMixer;
     public TMPro.TMP_Dropdown resolutionDropdown;
     Resolution[] resolutions;
     FMOD.Studio.Bus Master; //Grabs bus from fmod

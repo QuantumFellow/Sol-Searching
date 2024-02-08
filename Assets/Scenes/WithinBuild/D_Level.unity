@@ -1100,6 +1100,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1189512806
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1189512808}
+  - component: {fileID: 1189512807}
+  m_Layer: 0
+  m_Name: Global Volume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1189512807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189512806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 0}
+--- !u!4 &1189512808
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189512806}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 413.0683, y: 543.054, z: -3.7786608}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1301521615
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1643,30 +1692,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8010550426917627739, guid: d40cce76265ec6a4e94998fb120912e5, type: 3}
   m_PrefabInstance: {fileID: 1838988125}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1646511266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1646511264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93a8db183046f2c4e9eace1c679e574c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chladniMaterial: {fileID: 2100000, guid: 5af8ac6a0bf56bf4ba3c48b0b463d517, type: 2}
-  minA: -0.5
-  maxA: -0.3
-  b: 0.56
-  a: -0.3
-  N: 4
-  M: 10
-  scrollSpeed: 1
-  pulseSpeed: 1
-  Sensitivity: 1
-  AlterValue: 1
-  timeBetweenChanges: 2
 --- !u!95 &1646511267
 Animator:
   serializedVersion: 4
@@ -1687,6 +1712,29 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1646511268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646511264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 943b5d3986da47b469a4444fb6f6a911, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chladniMaterial: {fileID: 0}
+  minA: -0.5
+  maxA: -0.4
+  b: 0.56
+  a: -0.3
+  N: 4
+  M: 10
+  scrollSpeed: 1
+  pulseSpeed: 1
+  Sensitivity: 1
+  timeBetweenChanges: 2
 --- !u!1001 &1817932915
 PrefabInstance:
   m_ObjectHideFlags: 0

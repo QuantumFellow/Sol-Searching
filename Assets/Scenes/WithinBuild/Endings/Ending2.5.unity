@@ -256,7 +256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa11dfd355e4b5145b1ed72efe48d6c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeUntilNextScene: 1
+  TimeUntilNextScene: 2
 --- !u!1 &1712006519
 GameObject:
   m_ObjectHideFlags: 0

@@ -5341,7 +5341,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3000683402215276777, guid: 8fdefe8e069588740beb2c79a5085e0c, type: 3}
       propertyPath: dialogue.Array.data[0]
-      value: This was my favourite place to visit whe I was younger...
+      value: This was my favourite place to visit when I was younger...
       objectReference: {fileID: 0}
     - target: {fileID: 3000683402215276777, guid: 8fdefe8e069588740beb2c79a5085e0c, type: 3}
       propertyPath: dialogue.Array.data[1]
